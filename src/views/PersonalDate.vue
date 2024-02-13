@@ -82,9 +82,4 @@
     margin-top: 15px;
   }
 }
-
-.area {
-    margin-left: 230px;
-
-  }
 </style>
