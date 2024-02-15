@@ -29,7 +29,7 @@
           stroke-linejoin="round"
         />
       </svg>
-      <svg class="select-progress" width="11" height="11">
+      <svg width="11" height="11">
         <circle cx="5" cy="5.67188" r="5" />
       </svg>
     </div>
@@ -41,51 +41,64 @@
   </div>
   <div class="pasport row">
     <div class="pasport-data">
-        <input type="text" placeholder="Серия паспорта">
-        <input type="text" placeholder="Номер паспорта">
-        <input type="text" placeholder="Кем выдан">
-        <div class="pasport-data-input">
-        <input type="text" placeholder="Дата выдачи паспорта">
-        <img class="pasport-data-calender" src="../assets/calender.svg" alt="">
-        </div>
+      <input type="text" placeholder="Серия паспорта" />
+      <input type="text" placeholder="Номер паспорта" />
+      <input type="text" placeholder="Кем выдан" />
+      <div class="pasport-data-input">
+        <input type="text" placeholder="Дата выдачи паспорта" />
+        <img
+          class="pasport-data-calender"
+          src="../assets/calender.svg"
+          alt=""
+        />
+      </div>
     </div>
 
     <div class="area">
       <div class="area-title">Страхователь</div>
-      <div class="area-text medium"><b>Физическое лицо</b></div>
+      <div class="area-text medium">Физическое лицо</div>
       <div class="area-title">Лимит</div>
-      <div class="area-text"><b>1млн800тыс</b></div>
+      <div class="area-text">1млн800тыс</div>
+      <hr class="long" />
       <div class="amoun-line"></div>
       <div class="area-description">Страховой риск</div>
-      <div class="area-text"><b>Смерть,Инвалидность</b></div>
+      <div class="area-text">Смерть,Инвалидность</div>
       <div class="area-description">Срок страхования</div>
-      <div class="area-text"><b>12 месяцев</b></div>
+      <div class="area-text">12 месяцев</div>
     </div>
   </div>
-  <div class="next">
-    <div class="next-text">*договор вступает в силу с 00.00 часов 5 дня с момента оплаты</div>
-    <router-link class="next-btn" to="/policy-popup">Далее</router-link>
+  <div class="routing">
+    <div class="routing-empty"></div>
+    <div class="routing-text">
+      *договор вступает в силу с 00.00 часов 5 дня с момента оплаты
+    </div>
+    <div class="routing-container">
+      <router-link class="routing-btn" to="/personal-data-birth"
+        >Назад</router-link
+      >
+      <router-link class="routing-btn" to="/insured-list">Вперед</router-link>
+    </div>
   </div>
 </template>
 <style lang="scss">
 .pasport-data {
-    margin-top: 40px;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+  gap: 20px;
+
+  input {
+    width: 256px;
+  }
+
+  &-input {
     display: flex;
-    flex-wrap: wrap;
-    width: 700px;
-    gap: 20px;
+    align-items: center;
+  }
 
-    input {
-        width: 256px;
-    }
-
-    &-input {
-        display: flex;
-        align-items: center;
-    }
-
-    &-calender {
-        margin-left: -30px;
-    }
+  &-calender {
+    margin-left: -30px;
+  }
 }
 </style>

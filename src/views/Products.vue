@@ -2,7 +2,7 @@
   <div class="title">Страховые продукты</div>
   <div class="products">
     <div class="product">
-      <div class="product-title">Страхование от несчастных случаев</div>
+      <div class="product-title">Страхование от несчастных<br> случаев</div>
       <div class="product-description">
         Защита для вас и вашего ребенка на случай непредвиденных событий
       </div>
@@ -11,7 +11,7 @@
       >
       </div>
       <div class="product">
-        <div class="product-title">Страхование от несчастных случаев</div>
+        <div class="product-title">Страхование от несчастных<br> случаев</div>
         <div class="product-description">
           Защита для вас и вашего ребенка на случай непредвиденных событий
         </div>
@@ -43,7 +43,8 @@
 
   &-title {
     font-size: 26px;
-    font-weight: 700;
+    font-family: Montserrat;
+    font-weight: bold;
     line-height: 36px;
     text-transform: uppercase;
   }

@@ -56,15 +56,17 @@
       <div class="area-text medium">Физическое лицо</div>
       <div class="area-title">Лимит</div>
       <div class="area-text">1млн800тыс</div>
+      <hr>
       <div class="amoun-line"></div>
       <div class="area-description">Страховой риск</div>
       <div class="area-text">Смерть,Инвалидность</div>
       <div class="area-description">Срок страхования</div>
       <div class="area-text">12 месяцев</div>
       <div class="amoun-line"></div>
+      <hr>
       <div class="area-description">Предварительный расчёт</div>
       <div class="area-sum">0₽</div>
-      <router-link class="area-btn" to="/personal-data">Рассчитать</router-link>
+      <router-link class="area-btn" to="/personal-data-insured">Рассчитать</router-link>
     </div>
   </div>
 </template>

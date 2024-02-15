@@ -1,8 +1,9 @@
 <template>
-  <MAIN></MAIN>
+  <MAIN>
+  </MAIN>
 </template>
 <script>
-import MAIN from './views/MAIN.vue';
+import MAIN from './views/MAIN.vue'
 
 export default {
   components: {

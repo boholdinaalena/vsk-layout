@@ -19,7 +19,7 @@
           <td>Сумма страхования</td>
         </tr>
         <tr class="category">
-          <td >Смерть, Инвалидность</td>
+          <td>Смерть, Инвалидность</td>
           <td>66972363</td>
           <td>3500₽</td>
         </tr>
@@ -29,11 +29,11 @@
         </tr>
         <tr>
           <td>Номер телефона</td>
-          <td colspan="2">+7 963 393 49 49</td>
+          <td colspan="2"><u>+7 963 393 49 49</u></td>
         </tr>
         <tr>
           <td>E-mail</td>
-          <td colspan="2">test@test.ru</td>
+          <td colspan="2"><u>test@test.ru</u></td>
         </tr>
         <tr>
           <td>Паспорт</td>
@@ -69,7 +69,22 @@
   </div>
   <div class="bg-popup"></div>
 </template>
-
+<script>
+export default {
+  data() {
+    return {
+      message: "",
+    };
+  },
+  mounted() {
+    this.message = this.getMessage();
+  },
+  methods: {
+    getMessage() {
+    },
+  },
+};
+</script>
 <style lang="scss">
 
 .policy-popup {
@@ -84,6 +99,7 @@
   padding: 32px 45px;
   padding-right: 20px;
   border-radius: 10px;
+  z-index: 10;
 
   &-header {
     display: flex;
@@ -118,22 +134,20 @@
     margin-bottom: 10px;
 
     td {
-        width: 160px;
-        line-height: 30px;
-        vertical-align: middle;
+      width: 160px;
+      line-height: 30px;
+      vertical-align: middle;
     }
 
     td:first-child {
       width: 180px;
-      color: #6E7B97;
+      color: #6e7b97;
       font-weight: 500;
       font-size: 14px;
     }
     td:last-child {
       width: 122px;
     }
-
-
 
     .category {
       margin: 24px 0;
@@ -144,7 +158,6 @@
         color: #000000;
         font-size: 13px;
       }
-
     }
 
     tr:first-child {
@@ -155,9 +168,9 @@
 
       td:first-child {
         font-size: 12px;
-      font-weight: 600;
-      color: #a0a0ae;
-      justify-self: end;
+        font-weight: 600;
+        color: #a0a0ae;
+        justify-self: end;
       }
     }
   }
@@ -165,9 +178,10 @@
   &-nav {
     display: flex;
     gap: 10px;
+    margin-left: -20px;
 
     button {
-      background: #2D6ABA;
+      background: #2d6aba;
       border-radius: 16px;
       color: white;
       font-family: Raleway;
@@ -182,5 +196,4 @@
 .tr-indent {
   height: 70px;
 }
-
 </style>

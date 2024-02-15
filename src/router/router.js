@@ -2,9 +2,10 @@ import { createWebHistory, createRouter } from "vue-router";
 
 import Products from "../views/Products.vue"
 import Statistics from "../views/Statistics.vue"
-import PersonalData from "../views/PersonalDate.vue"
-import ContactData from "../views/ContactData.vue"
-import Pasport from "../views/Pasport.vue"
+import PersonalDataInsured from "../views/PersonalDataInsured.vue"
+import PersonalDataBirth from "../views/PersonalDataBirth.vue"
+import PersonalDataPasport from "../views/PersonalDataPasport.vue"
+import InsuredList from "../views/InsuredList.vue"
 import PolicyPopup from "../views/PolicyPopup.vue"
 
 
@@ -22,19 +23,24 @@ const routes = [
     component: Statistics,
   },
   {
-    path: "/personal-data",
-    name: "PersonalData",
-    component: PersonalData,
+    path: "/personal-data-insured",
+    name: "PersonalDataInsured",
+    component: PersonalDataInsured,
   },
   {
-    path: "/contact-data",
-    name: "ContactData",
-    component: ContactData,
+    path: "/personal-data-birth",
+    name: "PersonalDataBirth`",
+    component: PersonalDataBirth
   },
   {
-    path: "/pasport",
-    name: "Pasport",
-    component: Pasport,
+    path: "/personal-data-pasport",
+    name: "PersonalDataPasport",
+    component: PersonalDataPasport,
+  },
+  {
+    path: "/insured-list",
+    name: "InsuredList",
+    component: InsuredList,
   },
   {
     path: "/policy-popup",

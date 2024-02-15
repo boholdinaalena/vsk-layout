@@ -57,38 +57,41 @@
       Список застрахованных
       <div class="contact-data-list">
         <div class="contact-data-item">
-            Иванов Иван
-            <img src="../assets/cross.svg">
+          Иванов Иван
+          <img src="../assets/cross.svg" />
         </div>
       </div>
     </div>
     <div class="area">
-      <div class="area-title">Страхователь</div>
-      <div class="area-text medium"><b>Физическое лицо</b></div>
-      <div class="area-title">Лимит</div>
-      <div class="area-text"><b>1млн800тыс</b></div>
-      <div class="amoun-line"></div>
-      <div class="area-description">Страховой риск</div>
-      <div class="area-text"><b>Смерть,Инвалидность</b></div>
-      <div class="area-description">Срок страхования</div>
-      <div class="area-text"><b>12 месяцев</b></div>
+        <div class="area-title">Страхователь</div>
+        <div class="area-text medium">Физическое лицо</div>
+        <div class="area-title">Лимит</div>
+        <div class="area-text">1млн800тыс</div>
+        <hr class="long">
+        <div class="amoun-line"></div>
+        <div class="area-description">Страховой риск</div>
+        <div class="area-text">Смерть,Инвалидность</div>
+        <div class="area-description">Срок страхования</div>
+        <div class="area-text">12 месяцев</div>
+      </div>
+  </div>
+  <div class="routing">
+    <div class="routing-empty"></div>
+    <div class="routing-text">
+      *договор вступает в силу с 00.00 часов 5 дня с момента оплаты
+    </div>
+    <div class="routing-container">
+      <router-link class="routing-btn" to="/personal-data-pasport">Назад</router-link>
+      <router-link class="routing-btn click" to="/policy-popup">Вперед</router-link>
     </div>
   </div>
-
-  <div class="next">
-    <div class="next-empty"></div>
-    <div class="next-text">*договор вступает в силу с 00.00 часов 5 дня с момента оплаты</div>
-    <router-link class="next-btn" to="/pasport">Далее</router-link>
-  </div>
-
-
-
 </template>
 <style lang="scss">
+
 .contact {
-    .area {
-        margin-left: 100px;
-    }
+  .area {
+    margin-left: 100px;
+  }
 }
 .contact-data {
   margin-top: 20px;
@@ -96,10 +99,10 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 14px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
 
   label {
     font-family: Roboto;
@@ -128,15 +131,16 @@
   }
 
   &-list {
+    margin-bottom: 120px;
+  }
+
+  &-item {
+    display: flex;
+    justify-content: space-between;
     width: 201px;
     background: white;
     padding: 12px;
     border-radius: 8px;
   }
-
-  &-item {
-        display: flex;
-        justify-content: space-between;
-    }
 }
 </style>

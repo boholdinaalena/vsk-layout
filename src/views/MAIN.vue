@@ -75,11 +75,12 @@ import { RouterView } from "vue-router";
 
 .main {
   width: 100%;
+  position: relative;
   background: rgba(114, 181, 234, 0.08);
   border: 6px solid rgba(39, 41, 49, 0.07);
   border-radius: 20px;
   padding: 38px;
-  min-height: 88%;
+  min-height: 93%;
   height: max-content;
 }
 
