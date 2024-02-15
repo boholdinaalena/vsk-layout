@@ -56,7 +56,7 @@
       <div class="area-text medium"><b>Физическое лицо</b></div>
       <div class="area-title">Лимит</div>
       <div class="area-text"><b>1млн800тыс</b></div>
-      <div class="amoun-line"></div>
+      <hr class="long">
       <div class="area-description">Страховой риск</div>
       <div class="area-text"><b>Смерть,Инвалидность</b></div>
       <div class="area-description">Срок страхования</div>
